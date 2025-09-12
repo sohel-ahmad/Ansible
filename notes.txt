@@ -541,7 +541,7 @@ ansible all -b -m command -a "touch security.py"
 IQ] what is the difference between copy module and template module?
 
 copy: copy will copy the file from local (ansible server) to remote machines.
-template: template will copy file from local(ansible server) to remote(host) machines,It 	  replace the content using variables, while copying.
+template: template will copy file from local(ansible server) to remote(host) machines,It replace the content using variables, while copying.
 
 
 copy module
