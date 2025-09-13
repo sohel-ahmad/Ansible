@@ -1096,7 +1096,7 @@ In Ansible, a tag is a label that you can assign to tasks, plays, or roles in yo
         name: httpd
         state: started
         enabled: true
-      tags: configure
+      tags: start
 
     - name: Copy custom index.html to the web root
       copy:
@@ -1110,10 +1110,10 @@ ansible-playbook name.yaml --syntax-check
 
 ansible-playbook name.yaml --list-tags
 
-ansible-playbook your_playbook.yml --tags "deploy"  --> to run the playbook
+ansible-playbook your_playbook.yml --tags "deploy"  --> to run a specific task with tag "deploy" in the playbook
 
 
-ansible-playbook manage_web_server.yml --skip-tags start  --> to skip the particular task.
+ansible-playbook manage_web_server.yml --skip-tags start  --> to skip a particular task with tag "start".
 
 
 
