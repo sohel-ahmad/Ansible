@@ -277,7 +277,7 @@ step 2:
        
 
     2.3) Make the necessary changes  in sshd_config file /etc/ssh/sshd_config    
-           to enable password based authentication.
+           to disable password based authentication.
 
          Un comment PasswordAuthentication yes
          and comment  PasswordAuthentication no.
