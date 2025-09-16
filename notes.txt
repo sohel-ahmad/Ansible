@@ -1646,7 +1646,7 @@ ansible tag__Hosts -i aws_ec2.yml -m ping -u ec2-user --private-key /home/ec2-us
 📌 **Create a playbook** `install_apache.yml`:
 yaml
 - name: Install Apache on AWS EC2
-  hosts: tag_WebServers
+  hosts: tag__WebServers
   become: yes
   tasks:
     - name: Install Apache
